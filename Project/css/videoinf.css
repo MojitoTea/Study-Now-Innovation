@@ -1,0 +1,78 @@
+div[class*="row"] {
+    margin:20px 0;
+/*   border:1px solid red; */
+}
+div[class*="col-"] {
+    margin:10px 0;
+/*   border:1px solid red; */
+}
+.video_wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+.video_wrapper_full {
+  padding-top: 315px;
+}
+.videoIframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.videoPoster {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+   background:url("../images/inf.jpg") no-repeat center center /cover;
+  border: none;
+   text-indent: -999em;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 800ms, height 0s;
+  transition-delay: 0s, 0s;
+}
+.videoPoster:hover {
+  cursor: pointer;
+}
+.videoPoster:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  transition: border-color 300ms;
+}
+.videoPoster:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: -26px 0 0 -13px;
+    border-left: 40px solid #fff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transition: border-color 300ms;
+}
+.videoPoster:hover:before,  .videoPoster:focus:before {
+    border-color: #f60;
+}
+.videoPoster:hover:after, .videoPoster:focus:after {
+  border-left-color: #f60;
+}
+.videoWrapperActive .videoPoster {
+  opacity: 0;
+  height: 0;
+  transition-delay: 0s, 800ms;
+}

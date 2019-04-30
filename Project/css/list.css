@@ -1,0 +1,48 @@
+       .margin{
+
+            margin-top: 100px;
+            margin-bottom: 50px;
+
+        }
+
+        #main{
+  margin-top: 30px;
+
+}
+
+.category{
+  border-radius: 3px;
+}
+
+.col-heading {
+  text-align: center;
+  color: white;
+  background-color: #333;
+  padding: 4px;
+  margin: 6px 0px;
+  border-radius: 8px;
+}
+
+.plyr {
+    border-color: black;
+  margin-bottom: 3px;
+  border-radius: 8px!important;
+  text-align: center;
+}
+
+.up:hover {
+  background-color: rgba(38,166,154,0.8);
+}
+
+.spis:hover {
+  background-color: rgba(255,238,88,0.8);
+}
+
+
+
+.expi:hover
+{ 
+background-color: rgba(255,238,88,0.8);
+     }
+
+     

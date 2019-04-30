@@ -1,0 +1,302 @@
+
+
+html,body{
+    height:100%;
+    padding:0;
+    margin:0;
+    position:relative;
+    min-width:300px;
+  font-size:16px;
+  
+}
+h1{
+  font-family:'Amatic SC', cursive;
+  font-size:4em;
+}
+
+
+a:link,a:visited{
+    text-decoration:none;
+    color:inherit;
+}
+#landing{
+    height:100%;
+    background-image:url("http://i68.tinypic.com/2z8cjza.jpg");
+    background-size: cover;
+    z-index: -9999;
+}
+#landing #landingImgWrapper{
+    height:100%;
+    width:100%;
+    position:absolute;
+    background-color: rgba(0,0,0,0.4);
+}
+nav{
+    height:100px;
+}
+nav h1 a,
+nav h1 a:link,
+nav h1 a:visited{
+    color:rgba(255,255,255,0.98);
+text-decoration:none;
+
+}
+nav ul{
+    margin-top:30px;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    /*padding:5px 20px;*/
+    font-weight:300;
+}
+nav ul li a:link,
+nav ul li a:visited{
+    color:rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 1.2em;
+    border-bottom:solid 1.5px white;
+    padding-bottom:2px;
+    margin:0 5px;
+    border-bottom:solid 1.5px hsla(40,80%,50%,0.9);
+  
+}
+nav ul li a:active{
+    color:hsla(40,80%,50%,0.9);
+}
+#introBox{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color:white;
+    text-align:center;
+    margin-top:30px;
+}
+#introBox .row{
+    box-sizing: border-box;
+    min-width:300px;
+}
+#introBox p{
+    font-size: 1.1em;
+    text-align:justify;
+  font-family: 'Playfair Display', serif;
+}
+#introBox button{
+    width:130px;
+    margin-top:30px;
+    border-radius:0;
+  font-family: 'Playfair Display', serif;
+}
+#arrowDown{
+    position:absolute;
+    bottom:10px;
+    left:49%;
+    color:white;
+    font-size: 1.3em;
+}
+
+#page1 .row{
+    position:relative;
+}
+#page1 .col-md-6{
+    padding:60px 2%;
+    text-align:justify;
+    
+}
+#page1 .col-md-6:first-child {
+    padding:30px;
+    color:rgba(255,255,255,0.9);
+    height:400px;
+}
+#page1 .col-md-6:first-child p{
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+  font-family: 'Playfair Display', serif;
+}
+.linear-gradient{
+   /* background-image:linear-gradient(
+        to bottom,
+         hsla(1,80%,50%,0.9),
+         hsla(1,70%,50%,0.9),
+         hsla(1,60%,50%,0.9),
+         hsla(1,50%,50%,0.9),
+         hsla(1,40%,45%,0.9)
+         );
+         */
+        background-color:hsla(1,60%,50%,0.9);
+        
+}
+#page1 .col-md-6:nth-child(2) p{
+    padding:20px;
+    color:rgba(0,0,0,0.9);
+    position:relative;
+    padding-bottom:0;
+}
+
+#page1 #quoteBox::before{
+    content:"“";
+    font-size: 4em;
+    position:absolute;
+    top:-20px;
+    left:-2px;
+    color:hsla(1,60%,50%,0.9);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#page1 #quoteBox::after{
+    content:"”";
+    font-size: 4em;
+    position:absolute;
+    bottom:-60px;
+    right:-2px;
+    color:hsla(1,60%,50%,0.9);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#page1 #quoteBox + p{
+    text-align:right;
+    padding:0;
+    margin-top:30px;
+    padding-right:20px;
+}
+#page1 #quoteBox + p span{
+    font-weight: bold;
+}
+#quoteBox{
+  padding:0;
+}
+#page2{
+    background-color:rgba(0,0,0,0.97);
+    padding-bottom:100px;
+}
+#page2 .pageTitle{
+color:white;
+margin-top:30px;
+margin-bottom:30px;
+}
+#page2 .carousel-inner{
+    font-size: 1.1em;
+}
+#page2 .carousel-inner img{
+    min-height:400px;
+    width:100%;
+    height:100%;
+    filter: blur(1px);
+}
+#page3{
+    background-color:rgba(255,255,255,0.9);
+    padding-bottom:50px;
+}
+#page3 #page3Title{
+    padding:30px 0;
+}
+#page3 article{
+    margin-top:30px;
+    margin-bottom:30px;
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:0 1px 4px rgba(0,0,0,0.5);
+}
+#page3 article img{
+    max-width:100%;
+    min-width:100%;
+}
+#page3 article p{
+    text-align:justify;
+    padding:10px;
+}
+#contactPage{
+    background-color:rgba(0,0,0,0.9);
+    color:rgba(255,255,255,0.98);
+    padding-bottom:50px;
+}
+#contactPage>h1{
+    margin-bottom:50px;
+}
+#contactPage #name,
+#contactPage #email{
+    margin-bottom:20px;
+}
+#contactPage button[type='submit']{
+    margin-top:20px;
+    border-radius:0;
+    width:120px;
+    background-color:hsla(10,80%,60%,0.9);
+    border-color:hsla(10,80%,60%,0.9);
+    outline:none;
+}
+#footer row{
+    position:relative;
+    width:100%;
+    height:5%;
+}
+#footer row div{
+    color:rgba(0,0,0,0.9);
+    height:100%;
+}
+#footer #first{
+    background-color:hsla(5,90%,80%,0.9);
+}
+#footer #second{
+    background-color:hsla(87,90%,80%,0.9);
+
+}
+#footer #third{
+    background-color:hsla(245,90%,80%,0.9);
+
+}
+#footer #fourth{
+    background-color:hsla(348,60%,50%,0.9);
+}
+ #footer p{
+     margin:0;
+     padding:0;
+ }  
+
+
+@media only screen and (min-width:768px){
+    #introBox{
+        font-size: 1.1em;
+    }
+    nav ul li a:link,
+    nav ul li a:visited{
+        border-bottom:none;
+    }
+    nav ul li a:hover,
+    nav h1 a:hover{
+        color:hsla(1,99%,70%,0.9);
+    }
+    nav ul li{
+        margin-left:5px;
+        margin-right:5px;
+    }
+
+
+#page2 #carousel-id{
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#footer row{
+    position:relative;
+    width:100%;
+}
+#footer row div{
+    color:rgba(0,0,0,0.9);
+}
+#footer #first{
+    background-color:hsla(5,90%,80%,0.9);
+}
+#footer #second{
+    background-color:hsla(87,90%,80%,0.9);
+
+}
+#footer #third{
+    background-color:hsla(245,90%,80%,0.9);
+
+}
+#footer #fourth{
+    background-color:hsla(348,60%,50%,0.9);
+}
+
+}
